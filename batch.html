@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117773670-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-117773670-1');
+  </script>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Batch Lookup</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="css/batch.css"/>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="topnav" id="topnavbar">
+    <a href="index.html">Home</a>
+    <a href="single.html">Single</a>
+    <a href="batch.html" class="active">Batch</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>   
+    <a class="icon" href="javascript:void(0);" onclick="navigationBar()">☰</a>
+  </div>
+
+  <div class="main-body">
+    <h1><b>Batch Lookup</b></h1>
+    <h3>Please upload a csv containing a list of email addresses in the first column.</h3>
+
+    <p>Once the file is uploaded, please wait for the process to finish - this may take a few minutes depending on the number of email addresses. Once it is complete you will receive a download prompt for the output containing all of the related social media profiles found.</p>
+
+    <form action="cgi-bin/batch_lookup.py" enctype="multipart/form-data" method="post">
+      <input name="filename" type="file" />
+      <input type="submit" value="Upload" />
+    </form>
+  </div>
+
+  <div class="footer">
+    <!--footer text here-->
+  </div>
+</body>
+</html>

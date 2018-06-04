@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117773670-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-117773670-1');
+  </script>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact Form</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="topnav" id="topnavbar">
+    <a href="index.html">Home</a>
+    <a href="single.html">Single</a>
+    <a href="batch.html">Batch</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>    
+    <a class="icon" href="javascript:void(0);" onclick="navigationBar()">☰</a>
+  </div>
+
+  <div class="main-body">
+    <h1><b>Contact Form</b></h1>
+    <h3>Feel free to send me a message if you would like to chat or have any questions!</h3>
+    <p>You will be redirected to the main page once your message has been sent.</p>
+   <div class="container">
+      <form action="php/contact_form.php" method="POST">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="name@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+    
+        <input type="submit" value="Send">
+      </form>
+    </div>   
+
+  </div>
+  <div class="footer">
+    <!--footer text here-->
+  </div>
+</body>
+</html>
