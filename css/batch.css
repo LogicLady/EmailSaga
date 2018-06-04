@@ -1,0 +1,10 @@
+form {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+input[type=file] {
+  padding: 5px 10px;
+}
